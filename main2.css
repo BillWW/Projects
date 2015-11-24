@@ -33,8 +33,7 @@ h4 {
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9;
- /* ie8 */
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,40 +53,29 @@ p {
     display: flex;
 }
 
-.nmetitslo {
-    display: block;
-}
-
-p.profiletxt {
+#profiletxt {
     font-weight: bold;
-    text-indent: 10px;
 }
 
-.name {
-    margin-bottom: 0px;
-}
-
-.centerpic {
+#centerpic {
     display: flex;
 }
 
-.portpics {
+#portpics {
     display: flex;
     flex-wrap: wrap;
 }
 
-.test {
-    background: red;
-}
-
 .grid {
     background: gray;
+    height: 100%;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 .row {
     display: flex;
     overflow: auto;
-    width: 100%;
     margin-right: 100px;
     margin-left: 100px;
     max-width: 700px;
@@ -139,4 +127,22 @@ p.profiletxt {
 
 .col-12 {
     width: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .row {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-device-width: 360px) {
+    .row {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #picname {
+        display: block;
+    }
 }
